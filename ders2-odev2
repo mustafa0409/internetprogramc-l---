@@ -1,0 +1,45 @@
+<?php
+
+ Sinif'i  GlobalSinif olarak  kullan ;
+
+    sınıf  Sinif {
+        
+        genel  işlev  __construct (){
+            $ welcome =" Hoşgeldiniz!! Karşılama mesajı gönderdi.(Yapılandırma Yöntemi) ";
+            yankı  $ hoş geldiniz ;
+            yankı " <br> ";
+        }
+
+        genel  işlev  __destruct ()
+        {
+            echo " Yıkıcı metot çalıştı.(Destruct Metot) ";
+            yankı " <br> ";
+        }
+
+        genel  işlev  Derecesi ( $ vize , $ final ){
+            
+            $ not = $ vize * 0.3 + $ final * 0.7 ;
+            eğer ( $ değil >= 50 ) {
+                echo " Geçtiniz,notunuz: " . $ değil ;  
+                yankı " <br> ";  
+            }
+            başka {
+                yankı " Kaldınız ";
+                yankı " <br> ";
+            }
+        }
+
+        genel  işlev  çarpanı ( $ sayı ){
+            $ toplam = 1 ;
+           için ( $ i = 1 ; $ i <= $ num ; $ i ++) {
+            $ toplam = $ i * $ toplam ;
+           }
+           echo " $ num'ın factoryeli ". toplam $ ;
+           yankı " <br> ";
+        }
+    }
+
+    $ myClass = yeni  Sinif ();
+    $ myClass -> Not ( 50 , 80 );
+    $ myClass -> factoriel ( 5 );
+?>
